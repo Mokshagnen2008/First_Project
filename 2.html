@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokshagnen</title>
+    <link rel="icon" type="image/png" href="https://massmoca.org/wp-content/uploads/2015/12/cropped-favicon.png">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+
+<style>
+    .hero {
+        min-height: 420px;
+        padding: 80px 20px;
+        display: flex;
+        font-family: lucida sans;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #da6314, #6d2608);
+        color: white;
+    }
+.hero-message {
+    margin: 15px 0 25px;
+    color: #ffe0c2;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.promo-bar {
+    padding: 14px 20px;
+    background: linear-gradient(90deg, #ff9a4d, #da6314);
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+}
+.promo-bar p {
+    margin: 0;
+}
+
+.promo-bar a {
+    margin-left: 10px;
+    color: white;
+    text-decoration: underline;
+}
+
+.promo-bar a:hover {
+    color: #222;
+}
+        .hero-content {
+        max-width: 750px;
+    }
+
+        .hero h1{
+            margin: 0 0 20px;
+    font-size: 52px;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(218, 99, 20, 0.18);
+    animation: bubbleRise 8s linear infinite;
+}
+
+.bubble-one {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.bubble-two {
+    left: 35%;
+    width: 90px;
+    height: 90px;
+    animation-delay: 2s;
+}
+
+.bubble-three {
+    left: 65%;
+    width: 45px;
+    height: 45px;
+    animation-delay: 4s;
+}
+
+.bubble-four {
+    left: 85%;
+    width: 75px;
+    height: 75px;
+    animation-delay: 6s;
+}
+
+@keyframes bubbleRise {
+    0% {
+        opacity: 0;
+        transform: translateY(0) scale(0.7);
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-380px) scale(1.2);
+    }
+}
+
+.hero p {
+    margin-bottom: 30px;
+    font-size: 19px;
+    line-height: 1.6;
+}
+.hero-button {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: white;
+    color: #b65908;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+            .hero-button:hover {
+    background-color: #222;
+    color: white;
+    transform: scale(1.08);
+}
+.animated-space {
+    position: relative;
+    min-height: 280px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+     .space-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.space-content h2 {
+    margin-bottom: 10px;
+    color: #b65908;
+    font-size: 30px;
+}
+
+.space-content p {
+    color: #555;
+    font-size: 17px;
+}        
+
+         nav {
+            padding: 10px;
+            background-color: #da6314;
+         }
+
+         nav a {
+               padding: 20px;
+               background-color: transparent;
+         }  
+         
+         nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            
+         }
+
+         main {
+            padding: 100px 20px;
+            flex:1;
+            animation: homeAppear 1.2s ease-out;
+
+         }
+         h1{
+            font-size: 40px;
+         }
+        @keyframes homeAppear {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes buttonFloat {
+    from {
+        transform: translateY(0);
+        box-shadow: 0 5px 10px rgba(0, 114, 255, 0.3);
+    }
+
+    to {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 20px rgba(0, 114, 255, 0.5);
+    }
+}
+         main a {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #b65908;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            animation: buttonFloat 2s ease-in-out infinite alternate;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+         }
+         main a:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 18px rgba(0, 114, 255, 0.6);
+}
+
+         nav a i {
+            margin-right: 8px;
+         }
+        
+           footer {
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #222, #4a1c08);
+    color: white;
+    text-align: center;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+    color: #ff9a4d;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #ff9a4d;
+}
+
+.social-icons a {
+    margin: 0 8px;
+    color: white;
+    font-size: 22px;
+}
+
+.social-icons a:hover {
+    color: #ff9a4d;
+}
+
+         footer a {
+            color: white;
+            text-decoration: none;
+       
+         }
+
+.about-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.about-section h2 {
+    margin-bottom: 35px;
+    color: #b65908;
+    font-size: 32px;
+}
+
+.website-link {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.website-link:hover {
+    color: #da6314;
+    text-decoration: underline;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.info-card {
+    width: 250px;
+    padding: 25px;
+    background-color: #fff8f1;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.info-card h3 {
+    color: #da6314;
+}
+
+.info-card p {
+    line-height: 1.6;
+}
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 5px 0;
+        padding: 10px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .info-card {
+        width: 80%;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="2.html"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="1.html"><i class="fa-solid fa-user"></i>Personal Information</a>
+        <a href="3.html"><i class="fa-solid fa-circle-info"></i>About Us</a>
+        <a href="4.html"><i class="fa-solid fa-envelope"></i>Contact Us</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Website</h1>
+            <p>Hello, I am Mokshagnen. This website is designed to share information about me, my work, and my interests.</p>
+            <p class="hero-message">Discover useful information, explore creative ideas, and learn more about Mokshagnen's website.</p>
+            <a href="1.html" class="hero-button">Learn More</a>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <h2>What You Can Find Here</h2>
+        <div class="card-container">
+            <div class="info-card">
+                <h3>Personal Information</h3>
+                <p>Learn more about my background, interests, and experience.</p>
+            </div>
+            <div class="info-card">
+                <h3>About This Website</h3>
+                <p>This website demonstrates HTML, CSS, navigation, and animation.</p>
+            </div>
+            <div class="info-card">
+                <h3>Contact Me</h3>
+                <p>Get in touch with me through the Contact Us page.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <h2>Useful Websites and Popular Brands</h2>
+        <p><strong><a class="website-link" href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Google</a>:</strong> A popular search engine and technology company known for Google Search, Android, YouTube, Google Maps, and Google Cloud.</p>
+        <p><strong><a class="website-link" href="https://www.adidas.com/" target="_blank" rel="noopener noreferrer">Adidas</a>:</strong> A global sportswear brand that designs athletic shoes, clothing, and sporting accessories.</p>
+        <p><strong><a class="website-link" href="https://www.apple.com/" target="_blank" rel="noopener noreferrer">Apple</a>:</strong> A technology company known for the iPhone, iPad, Mac computers, Apple Watch, iCloud, and Apple Music.</p>
+        <p><strong><a class="website-link" href="https://www.microsoft.com/" target="_blank" rel="noopener noreferrer">Microsoft</a>:</strong> A software and technology company known for Windows, Microsoft 365, Azure Cloud, Xbox, and other business solutions.</p>
+        <p>These websites and brands are examples of how technology, creativity, and useful services can connect people around the world.</p>
+    </section>
+
+    <section class="animated-space">
+        <span class="bubble bubble-one"></span>
+        <span class="bubble bubble-two"></span>
+        <span class="bubble bubble-three"></span>
+        <span class="bubble bubble-four"></span>
+        <div class="space-content">
+            <h2>Explore Something New</h2>
+            <p>Every idea begins with imagination and creativity.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <h3>Mokshagnen's Website</h3>
+    <p>Thank you for visiting my website.</p>
+    <div class="promo-bar">
+        <p>Explore our website, discover something new, and stay connected with us!
+            <a href="4.html">Contact Us Today</a>
+        </p>
+    </div>
+    <div class="footer-links">
+        <a href="2.html">Home</a>
+        <a href="1.html">Personal Information</a>
+        <a href="3.html">About Us</a>
+        <a href="4.html">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+    </div>
+    <div class="brand-links">
+        <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Google</a>
+        <a href="https://www.apple.com/" target="_blank" rel="noopener noreferrer">Apple</a>
+        <a href="https://www.microsoft.com/" target="_blank" rel="noopener noreferrer">Microsoft</a>
+        <a href="https://www.amazon.com/" target="_blank" rel="noopener noreferrer">Amazon</a>
+        <a href="https://www.nike.com/" target="_blank" rel="noopener noreferrer">Nike</a>
+        <a href="https://www.adidas.com/" target="_blank" rel="noopener noreferrer">Adidas</a>
+        <a href="https://www.netflix.com/" target="_blank" rel="noopener noreferrer">Netflix</a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <p>&copy; 2026 Mokshagnen. All rights reserved.</p>
+</footer>
+</body>
+</html>
